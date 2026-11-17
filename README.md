@@ -1,4 +1,4 @@
-# ACV isqu?mico ? texto, tabular e imagen
+# ACV isquEmico , tabular e imagen
 
 Copia de la carpeta `text` para continuar el trabajo en otro PC. Incluye c?digo, tablas, cach?s, modelos y resultados disponibles en esta carpeta. Mantener este repositorio privado: contiene datos cl?nicos.
 
@@ -11,7 +11,7 @@ git clone https://github.com/Manu2831/acv-ischemic-text.git
 cd acv-ischemic-text
 ```
 
-Tambi?n puedes usar **Code > Download ZIP** en GitHub despu?s de iniciar sesi?n.
+TambiEn puedes usar **Code > Download ZIP** en GitHub despuEs de iniciar sesiOn.
 
 ## Archivos que debes transferir aparte
 
@@ -26,13 +26,13 @@ Tambi?n puedes usar **Code > Download ZIP** en GitHub despu?s de iniciar sesi?n.
 - `02_texto_bert/`: modelos de texto y multimodales con BERT.
 - `03_texto_reglas_vs_bert/`: comparaci?n de reglas y BERT.
 - `04_imagen/`: preprocesamiento y entrenamiento de imagen.
-- `05_kaggle/`: generaci?n del paquete para Kaggle.
+- `05_kaggle/`: generacion del paquete para Kaggle.
 - `06_mapa_lesiones/`: mapas y descriptores de lesiones.
-- `07_tabla_limpia/`: construcci?n y evaluaci?n de la tabla corregida.
-- `08_desconexion/`: c?digo adicional de desconexi?n.
+- `07_tabla_limpia/`: construccion y evaluaci?n de la tabla corregida.
+- `08_desconexion/`: codigo adicional de desconexion.
 - `datos/` y carpetas de resultados: datos y artefactos existentes.
 
-## Configuraci?n de rutas y Python
+## Configuracion de rutas y Python
 
 Instala las dependencias que requiera el experimento que vayas a ejecutar. Los scripts usan, entre otras, PyTorch, NumPy, pandas, scikit-learn, Transformers, TabPFN, matplotlib, seaborn, SciPy, nibabel, timm y python-dotenv; algunos flujos tambi?n usan MONAI o Weights & Biases. Esta copia no fija versiones ni garantiza reproducibilidad del entorno original.
 
