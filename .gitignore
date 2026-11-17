@@ -13,3 +13,18 @@ venv/
 
 # El respaldo original contiene license.env; se incluye una copia saneada
 /_respaldo_antes_de_ordenar_2026-11-02.zip
+
+# Datos por paciente (IDs, imágenes o transformaciones individuales): NO subir.
+# Solo se suben código, figuras de grupo y tablas agregadas.
+08_desconexion/cache/
+08_desconexion/resultados/desconexion_por_paciente.csv
+08_desconexion/resultados/qc_registro.png
+09_tractotron/tractotron_probabilidad.csv
+09_tractotron/tractotron_proporcion.csv
+09_tractotron/resultados/tabla_cruzada.csv
+09_tractotron/dataset_report.csv
+logTractotron.txt
+dataset_report.csv
+
+# Las diapositivas se suben aparte
+*.pptx

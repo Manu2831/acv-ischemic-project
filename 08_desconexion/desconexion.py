@@ -1,7 +1,7 @@
 """Desconexión de tractos por la lesión: ¿agrega algo al modelo clínico (edad + NIHSS)?
 
-1. Registra cada paciente al espacio MNI152 (afín: similaridad sobre máscaras de cerebro + afín con información
-   mutua sobre el ADC). Guarda las transformaciones en cache/ y un control de calidad (Dice de máscaras + figura).
+1. Registra cada paciente al espacio MNI152 (afín sobre las máscaras de cerebro; sin T1 y con cortes de 6 mm no
+   se intenta registro no lineal). Guarda las transformaciones en cache/ y un control de calidad (Dice + figura).
 2. Lleva la máscara de lesión DWI a MNI y la cruza con el atlas probabilístico de tractos JHU (20 tractos).
 3. Medida PRINCIPAL, fijada antes de mirar resultados: carga de lesión sobre el tracto corticoespinal (wCST-LL,
    mL ponderados por la probabilidad del tracto, el lado más afectado).
@@ -64,46 +64,26 @@ fmask_np = sitk.GetArrayFromImage(fixed_mask).astype(bool)
 
 
 def registrar(pid, split):
+    """Afín (12 parámetros) alineando la máscara de cerebro del paciente con la de MNI152.
+    Se probó refinar con información mutua ADC <-> T1 y empeoraba (ventrículos desalineados, Dice 0,70-0,79)."""
     raw = ROOT / "acv_split" / split / "rawdata" / pid / "ses-01"
     adc = leer(raw / "adc.nii.gz")
-    bm = leer(raw / "dwi_brain_mask.nii.gz")
-    bm = sitk.Resample(bm, adc, sitk.Transform(), sitk.sitkNearestNeighbor) > 0.5
-    moving = sitk.Mask(adc, bm)
-    # Etapa 1: similaridad (rotación, traslación, escala) alineando las máscaras de cerebro
-    f_s, m_s = sitk.SmoothingRecursiveGaussian(sitk.Cast(fixed_mask, sitk.sitkFloat32), 4.0), \
-        sitk.SmoothingRecursiveGaussian(sitk.Cast(bm, sitk.sitkFloat32), 4.0)
-    init = sitk.CenteredTransformInitializer(f_s, m_s, sitk.Similarity3DTransform(),
+    bm = sitk.Resample(leer(raw / "dwi_brain_mask.nii.gz"), adc, sitk.Transform(), sitk.sitkNearestNeighbor) > 0.5
+    f_s = sitk.SmoothingRecursiveGaussian(sitk.Cast(fixed_mask, sitk.sitkFloat32), 4.0)
+    m_s = sitk.SmoothingRecursiveGaussian(sitk.Cast(bm, sitk.sitkFloat32), 4.0)
+    init = sitk.CenteredTransformInitializer(f_s, m_s, sitk.AffineTransform(3),
                                              sitk.CenteredTransformInitializerFilter.MOMENTS)
     r = sitk.ImageRegistrationMethod()
     r.SetMetricAsMeanSquares()
     r.SetInterpolator(sitk.sitkLinear)
-    r.SetOptimizerAsRegularStepGradientDescent(1.0, 1e-4, 200)
+    r.SetOptimizerAsRegularStepGradientDescent(1.0, 1e-5, 400)
     r.SetOptimizerScalesFromPhysicalShift()
-    r.SetShrinkFactorsPerLevel([4, 2])
-    r.SetSmoothingSigmasPerLevel([2, 1])
+    r.SetShrinkFactorsPerLevel([4, 2, 1])
+    r.SetSmoothingSigmasPerLevel([2, 1, 0])
     r.SetInitialTransform(init, inPlace=False)
-    sim = r.Execute(f_s, m_s)
-    if isinstance(sim, sitk.CompositeTransform):
-        sim = sim.GetNthTransform(0)
-    sim = sitk.Similarity3DTransform(sim)
-    # Etapa 2: afín con información mutua sobre el ADC (contraste cruzado ADC <-> T1)
-    aff = sitk.AffineTransform(3)
-    aff.SetMatrix(sim.GetMatrix())
-    aff.SetTranslation(sim.GetTranslation())
-    aff.SetCenter(sim.GetCenter())
-    r = sitk.ImageRegistrationMethod()
-    r.SetMetricAsMattesMutualInformation(32)
-    r.SetMetricSamplingStrategy(r.RANDOM)
-    r.SetMetricSamplingPercentage(0.25, seed=0)
-    r.SetMetricFixedMask(fixed_mask)
-    r.SetMetricMovingMask(bm)
-    r.SetInterpolator(sitk.sitkLinear)
-    r.SetOptimizerAsRegularStepGradientDescent(0.5, 1e-5, 300)
-    r.SetOptimizerScalesFromPhysicalShift()
-    r.SetShrinkFactorsPerLevel([2, 1])
-    r.SetSmoothingSigmasPerLevel([1, 0])
-    r.SetInitialTransform(aff, inPlace=False)
-    t = r.Execute(fixed, moving)
+    t = r.Execute(f_s, m_s)
+    if isinstance(t, sitk.CompositeTransform):
+        t = t.GetNthTransform(0)
     return t, adc, bm
 
 
@@ -121,7 +101,7 @@ for _, row in tab.iterrows():
         adc = leer(raw / "adc.nii.gz")
         bm = sitk.Resample(leer(raw / "dwi_brain_mask.nii.gz"), adc, sitk.Transform(), sitk.sitkNearestNeighbor) > 0.5
     else:
-        print("registrando", pid, flush=True)
+        print(".", end="", flush=True)  # registrando (sin IDs en la salida)
         t, adc, bm = registrar(pid, split)
         sitk.WriteTransform(t, str(tf))
     wm = sitk.GetArrayFromImage(sitk.Resample(sitk.Cast(bm, sitk.sitkFloat32), fixed, t, sitk.sitkLinear)) > 0.5
@@ -147,7 +127,7 @@ for _, row in tab.iterrows():
 d = pd.DataFrame(filas).merge(tab, on=["Paciente_id", "split"])
 d.to_csv(OUT / "desconexion_por_paciente.csv", index=False, encoding="utf-8-sig")
 print(f"\nregistrados: {len(d)} | Dice máscara de cerebro vs MNI: mediana {d.dice_registro.median():.3f}, "
-      f"mínimo {d.dice_registro.min():.3f} ({d.loc[d.dice_registro.idxmin(), 'Paciente_id']}) | "
+      f"mínimo {d.dice_registro.min():.3f} | "
       f"< 0,85: {(d.dice_registro < 0.85).sum()}")
 
 # ---------- Figura de control de calidad del registro ----------
@@ -196,7 +176,7 @@ def lrt(df, extra):
 
 
 print("\n=== MEDIDA PRINCIPAL: carga de lesión sobre el corticoespinal (wCST-LL) ===")
-for nom, sub in (("todos (CV sobre los 154)", d), ("solo train", d[d.split == "train"])):
+for nom, sub in (("todos los pacientes", d), ("solo train", d[d.split == "train"])):
     a0, a1 = cv(sub, CLIN), cv(sub, CLIN + ["wcst"])
     g0, g1 = sub.loc[sub.y == 0, "carga_Corticoespinal"], sub.loc[sub.y == 1, "carga_Corticoespinal"]
     print(f"[{nom}] n={len(sub)}, {sub.y.sum()} eventos")

@@ -86,7 +86,7 @@ for pid in mrs.index:
         continue
     r = normalizar(pid)
     if r is None:
-        print("sin datos:", pid)
+        print("paciente sin imagen o máscara utilizable (se omite)")
         continue
     ids.append(pid); L.append(r[0]); D.append(r[1])
 L = np.array(L, dtype=np.float32)
