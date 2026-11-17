@@ -1,0 +1,2095 @@
+{
+ "spacing_xyz_mm": [
+  2.0,
+  2.0,
+  6.0
+ ],
+ "shape_xyz": [
+  112,
+  112,
+  28
+ ],
+ "layout": "DHW = (Z, Y, X), RAS",
+ "patients": [
+  {
+   "Paciente_id": "ACV-007",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 2.098832679748535,
+   "lesion_dwi_vox_cache": 91,
+   "lesion_adc_vox_cache": 83,
+   "brain_vox_cache": 61165
+  },
+  {
+   "Paciente_id": "ACV-008",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 2.9478534283638003,
+   "lesion_dwi_vox_cache": 117,
+   "lesion_adc_vox_cache": 81,
+   "brain_vox_cache": 55705
+  },
+  {
+   "Paciente_id": "ACV-011",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 19.53810007095337,
+   "lesion_dwi_vox_cache": 806,
+   "lesion_adc_vox_cache": 596,
+   "brain_vox_cache": 70104
+  },
+  {
+   "Paciente_id": "ACV-014",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.1337908053398131,
+   "lesion_dwi_vox_cache": 49,
+   "lesion_adc_vox_cache": 26,
+   "brain_vox_cache": 69249
+  },
+  {
+   "Paciente_id": "ACV-016",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.5
+   ],
+   "lesion_dwi_ml_orig": 0.0,
+   "lesion_dwi_vox_cache": 0,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 58785
+  },
+  {
+   "Paciente_id": "ACV-019",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 6.212123417854309,
+   "lesion_dwi_vox_cache": 271,
+   "lesion_adc_vox_cache": 96,
+   "brain_vox_cache": 56792
+  },
+  {
+   "Paciente_id": "ACV-023",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.3447274136543275,
+   "lesion_dwi_vox_cache": 51,
+   "lesion_adc_vox_cache": 41,
+   "brain_vox_cache": 63056
+  },
+  {
+   "Paciente_id": "ACV-024",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.4818403592109681,
+   "lesion_dwi_vox_cache": 59,
+   "lesion_adc_vox_cache": 32,
+   "brain_vox_cache": 70860
+  },
+  {
+   "Paciente_id": "ACV-028",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.4027353897094728,
+   "lesion_dwi_vox_cache": 57,
+   "lesion_adc_vox_cache": 52,
+   "brain_vox_cache": 58334
+  },
+  {
+   "Paciente_id": "ACV-030",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 17.750403465270995,
+   "lesion_dwi_vox_cache": 731,
+   "lesion_adc_vox_cache": 447,
+   "brain_vox_cache": 70104
+  },
+  {
+   "Paciente_id": "ACV-031",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.239259717464447,
+   "lesion_dwi_vox_cache": 47,
+   "lesion_adc_vox_cache": 36,
+   "brain_vox_cache": 69249
+  },
+  {
+   "Paciente_id": "ACV-032",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 3.0427750883102416,
+   "lesion_dwi_vox_cache": 125,
+   "lesion_adc_vox_cache": 6,
+   "brain_vox_cache": 68443
+  },
+  {
+   "Paciente_id": "ACV-034",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 19.379893326759337,
+   "lesion_dwi_vox_cache": 788,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 61722
+  },
+  {
+   "Paciente_id": "ACV-035",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.1812511749267578,
+   "lesion_dwi_vox_cache": 46,
+   "lesion_adc_vox_cache": 21,
+   "brain_vox_cache": 53262
+  },
+  {
+   "Paciente_id": "ACV-040",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.0,
+   "lesion_dwi_vox_cache": 0,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 58061
+  },
+  {
+   "Paciente_id": "ACV-043",
+   "split": "train",
+   "orig_spacing": [
+    0.8330000042915344,
+    0.8330000042915344,
+    7.199999809265137
+   ],
+   "lesion_dwi_ml_orig": 12.513990279197692,
+   "lesion_dwi_vox_cache": 579,
+   "lesion_adc_vox_cache": 453,
+   "brain_vox_cache": 62102
+  },
+  {
+   "Paciente_id": "ACV-044",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.6539067230224609,
+   "lesion_dwi_vox_cache": 27,
+   "lesion_adc_vox_cache": 13,
+   "brain_vox_cache": 66884
+  },
+  {
+   "Paciente_id": "ACV-048",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.2181649436950683,
+   "lesion_dwi_vox_cache": 47,
+   "lesion_adc_vox_cache": 29,
+   "brain_vox_cache": 71669
+  },
+  {
+   "Paciente_id": "ACV-051",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 2.1146522617340087,
+   "lesion_dwi_vox_cache": 87,
+   "lesion_adc_vox_cache": 60,
+   "brain_vox_cache": 63733
+  },
+  {
+   "Paciente_id": "ACV-052",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.3322270131111145,
+   "lesion_dwi_vox_cache": 17,
+   "lesion_adc_vox_cache": 10,
+   "brain_vox_cache": 58241
+  },
+  {
+   "Paciente_id": "ACV-053",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.286722240447998,
+   "lesion_dwi_vox_cache": 56,
+   "lesion_adc_vox_cache": 49,
+   "brain_vox_cache": 56175
+  },
+  {
+   "Paciente_id": "ACV-055",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 3.2695407104492187,
+   "lesion_dwi_vox_cache": 131,
+   "lesion_adc_vox_cache": 121,
+   "brain_vox_cache": 58387
+  },
+  {
+   "Paciente_id": "ACV-062",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.4482432007789612,
+   "lesion_dwi_vox_cache": 19,
+   "lesion_adc_vox_cache": 9,
+   "brain_vox_cache": 55570
+  },
+  {
+   "Paciente_id": "ACV-064",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.9808616809844971,
+   "lesion_dwi_vox_cache": 40,
+   "lesion_adc_vox_cache": 59,
+   "brain_vox_cache": 58959
+  },
+  {
+   "Paciente_id": "ACV-065",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 2.003907337188721,
+   "lesion_dwi_vox_cache": 83,
+   "lesion_adc_vox_cache": 77,
+   "brain_vox_cache": 70233
+  },
+  {
+   "Paciente_id": "ACV-067",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 5.953716859340668,
+   "lesion_dwi_vox_cache": 246,
+   "lesion_adc_vox_cache": 116,
+   "brain_vox_cache": 65964
+  },
+  {
+   "Paciente_id": "ACV-069",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 8.158018139839172,
+   "lesion_dwi_vox_cache": 335,
+   "lesion_adc_vox_cache": 383,
+   "brain_vox_cache": 58938
+  },
+  {
+   "Paciente_id": "ACV-073",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.8226584815979003,
+   "lesion_dwi_vox_cache": 30,
+   "lesion_adc_vox_cache": 20,
+   "brain_vox_cache": 62560
+  },
+  {
+   "Paciente_id": "ACV-074",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.5767600936889647,
+   "lesion_dwi_vox_cache": 66,
+   "lesion_adc_vox_cache": 31,
+   "brain_vox_cache": 69818
+  },
+  {
+   "Paciente_id": "ACV-075",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 3.153519331932068,
+   "lesion_dwi_vox_cache": 129,
+   "lesion_adc_vox_cache": 50,
+   "brain_vox_cache": 58311
+  },
+  {
+   "Paciente_id": "ACV-081",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 50.952036054611206,
+   "lesion_dwi_vox_cache": 2091,
+   "lesion_adc_vox_cache": 2202,
+   "brain_vox_cache": 65216
+  },
+  {
+   "Paciente_id": "ACV-082",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.6453163681030274,
+   "lesion_dwi_vox_cache": 63,
+   "lesion_adc_vox_cache": 56,
+   "brain_vox_cache": 65564
+  },
+  {
+   "Paciente_id": "ACV-089",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 26.583434493541716,
+   "lesion_dwi_vox_cache": 1087,
+   "lesion_adc_vox_cache": 622,
+   "brain_vox_cache": 68458
+  },
+  {
+   "Paciente_id": "ACV-090",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 7.862715219497681,
+   "lesion_dwi_vox_cache": 323,
+   "lesion_adc_vox_cache": 312,
+   "brain_vox_cache": 64297
+  },
+  {
+   "Paciente_id": "ACV-094",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 6.491610954284668,
+   "lesion_dwi_vox_cache": 265,
+   "lesion_adc_vox_cache": 163,
+   "brain_vox_cache": 54980
+  },
+  {
+   "Paciente_id": "ACV-098",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 2.330865065574646,
+   "lesion_dwi_vox_cache": 101,
+   "lesion_adc_vox_cache": 90,
+   "brain_vox_cache": 62875
+  },
+  {
+   "Paciente_id": "ACV-099",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 24.38442571258545,
+   "lesion_dwi_vox_cache": 1000,
+   "lesion_adc_vox_cache": 945,
+   "brain_vox_cache": 50468
+  },
+  {
+   "Paciente_id": "ACV-109",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 2.6630893087387086,
+   "lesion_dwi_vox_cache": 114,
+   "lesion_adc_vox_cache": 109,
+   "brain_vox_cache": 63102
+  },
+  {
+   "Paciente_id": "ACV-118",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 46.79129132604599,
+   "lesion_dwi_vox_cache": 1911,
+   "lesion_adc_vox_cache": 1553,
+   "brain_vox_cache": 68671
+  },
+  {
+   "Paciente_id": "ACV-122",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    5.5
+   ],
+   "lesion_dwi_ml_orig": 5.747613658428192,
+   "lesion_dwi_vox_cache": 222,
+   "lesion_adc_vox_cache": 127,
+   "brain_vox_cache": 54002
+  },
+  {
+   "Paciente_id": "ACV-127",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.6189470691680907,
+   "lesion_dwi_vox_cache": 66,
+   "lesion_adc_vox_cache": 56,
+   "brain_vox_cache": 65799
+  },
+  {
+   "Paciente_id": "ACV-130",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 7.825797525405884,
+   "lesion_dwi_vox_cache": 315,
+   "lesion_adc_vox_cache": 202,
+   "brain_vox_cache": 67612
+  },
+  {
+   "Paciente_id": "ACV-143",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.6644543867111206,
+   "lesion_dwi_vox_cache": 30,
+   "lesion_adc_vox_cache": 24,
+   "brain_vox_cache": 53639
+  },
+  {
+   "Paciente_id": "ACV-145",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.9492206382751465,
+   "lesion_dwi_vox_cache": 42,
+   "lesion_adc_vox_cache": 35,
+   "brain_vox_cache": 60487
+  },
+  {
+   "Paciente_id": "ACV-148",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.0,
+   "lesion_dwi_vox_cache": 0,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 62091
+  },
+  {
+   "Paciente_id": "ACV-150",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 4.909571644306183,
+   "lesion_dwi_vox_cache": 199,
+   "lesion_adc_vox_cache": 123,
+   "brain_vox_cache": 65522
+  },
+  {
+   "Paciente_id": "ACV-151",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 4.566805546760559,
+   "lesion_dwi_vox_cache": 193,
+   "lesion_adc_vox_cache": 128,
+   "brain_vox_cache": 62585
+  },
+  {
+   "Paciente_id": "ACV-155",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.7910161972045898,
+   "lesion_dwi_vox_cache": 33,
+   "lesion_adc_vox_cache": 4,
+   "brain_vox_cache": 62706
+  },
+  {
+   "Paciente_id": "ACV-161",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 9.566016489982605,
+   "lesion_dwi_vox_cache": 380,
+   "lesion_adc_vox_cache": 238,
+   "brain_vox_cache": 57256
+  },
+  {
+   "Paciente_id": "ACV-162",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 14.528346586227418,
+   "lesion_dwi_vox_cache": 606,
+   "lesion_adc_vox_cache": 417,
+   "brain_vox_cache": 58291
+  },
+  {
+   "Paciente_id": "ACV-163",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.9808597297668457,
+   "lesion_dwi_vox_cache": 44,
+   "lesion_adc_vox_cache": 26,
+   "brain_vox_cache": 58987
+  },
+  {
+   "Paciente_id": "ACV-170",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 29.736930195808412,
+   "lesion_dwi_vox_cache": 1224,
+   "lesion_adc_vox_cache": 1240,
+   "brain_vox_cache": 67806
+  },
+  {
+   "Paciente_id": "ACV-172",
+   "split": "train",
+   "orig_spacing": [
+    0.8330000042915344,
+    0.8330000042915344,
+    7.199999809265137
+   ],
+   "lesion_dwi_ml_orig": 1.8648488187789918,
+   "lesion_dwi_vox_cache": 97,
+   "lesion_adc_vox_cache": 63,
+   "brain_vox_cache": 50422
+  },
+  {
+   "Paciente_id": "ACV-174",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 16.716821060180663,
+   "lesion_dwi_vox_cache": 697,
+   "lesion_adc_vox_cache": 583,
+   "brain_vox_cache": 64579
+  },
+  {
+   "Paciente_id": "ACV-176",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.3744142656326294,
+   "lesion_dwi_vox_cache": 17,
+   "lesion_adc_vox_cache": 21,
+   "brain_vox_cache": 54299
+  },
+  {
+   "Paciente_id": "ACV-179",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 6.011723098754882,
+   "lesion_dwi_vox_cache": 245,
+   "lesion_adc_vox_cache": 190,
+   "brain_vox_cache": 59782
+  },
+  {
+   "Paciente_id": "ACV-181",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 7.978717430591583,
+   "lesion_dwi_vox_cache": 339,
+   "lesion_adc_vox_cache": 228,
+   "brain_vox_cache": 54052
+  },
+  {
+   "Paciente_id": "ACV-182",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 7.3195345592498775,
+   "lesion_dwi_vox_cache": 305,
+   "lesion_adc_vox_cache": 199,
+   "brain_vox_cache": 62536
+  },
+  {
+   "Paciente_id": "ACV-184",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 29.974253984451295,
+   "lesion_dwi_vox_cache": 1223,
+   "lesion_adc_vox_cache": 1134,
+   "brain_vox_cache": 64607
+  },
+  {
+   "Paciente_id": "ACV-185",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 12.197499539852142,
+   "lesion_dwi_vox_cache": 514,
+   "lesion_adc_vox_cache": 603,
+   "brain_vox_cache": 61820
+  },
+  {
+   "Paciente_id": "ACV-186",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 23.23476142311096,
+   "lesion_dwi_vox_cache": 954,
+   "lesion_adc_vox_cache": 733,
+   "brain_vox_cache": 60219
+  },
+  {
+   "Paciente_id": "ACV-189",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 25.91369296360016,
+   "lesion_dwi_vox_cache": 1064,
+   "lesion_adc_vox_cache": 885,
+   "brain_vox_cache": 54099
+  },
+  {
+   "Paciente_id": "ACV-191",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.4818395552635193,
+   "lesion_dwi_vox_cache": 58,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 58335
+  },
+  {
+   "Paciente_id": "ACV-193",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.661131911277771,
+   "lesion_dwi_vox_cache": 69,
+   "lesion_adc_vox_cache": 34,
+   "brain_vox_cache": 58527
+  },
+  {
+   "Paciente_id": "ACV-194",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 60.069878648757935,
+   "lesion_dwi_vox_cache": 2504,
+   "lesion_adc_vox_cache": 2623,
+   "brain_vox_cache": 54265
+  },
+  {
+   "Paciente_id": "ACV-200",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.4923855113983153,
+   "lesion_dwi_vox_cache": 62,
+   "lesion_adc_vox_cache": 32,
+   "brain_vox_cache": 58627
+  },
+  {
+   "Paciente_id": "ACV-201",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 15.64103825378418,
+   "lesion_dwi_vox_cache": 657,
+   "lesion_adc_vox_cache": 477,
+   "brain_vox_cache": 62914
+  },
+  {
+   "Paciente_id": "ACV-202",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.4818370094299316,
+   "lesion_dwi_vox_cache": 64,
+   "lesion_adc_vox_cache": 43,
+   "brain_vox_cache": 60429
+  },
+  {
+   "Paciente_id": "ACV-208",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 111.32781085824966,
+   "lesion_dwi_vox_cache": 4587,
+   "lesion_adc_vox_cache": 4424,
+   "brain_vox_cache": 59404
+  },
+  {
+   "Paciente_id": "ACV-213",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 128.12875728034973,
+   "lesion_dwi_vox_cache": 5317,
+   "lesion_adc_vox_cache": 3545,
+   "brain_vox_cache": 67516
+  },
+  {
+   "Paciente_id": "ACV-218",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 71.24943339014054,
+   "lesion_dwi_vox_cache": 2957,
+   "lesion_adc_vox_cache": 2723,
+   "brain_vox_cache": 63167
+  },
+  {
+   "Paciente_id": "ACV-221",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 100.40100379800796,
+   "lesion_dwi_vox_cache": 4152,
+   "lesion_adc_vox_cache": 3925,
+   "brain_vox_cache": 64937
+  },
+  {
+   "Paciente_id": "ACV-222",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 135.20069625377656,
+   "lesion_dwi_vox_cache": 5586,
+   "lesion_adc_vox_cache": 6034,
+   "brain_vox_cache": 54736
+  },
+  {
+   "Paciente_id": "ACV-224",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 83.27816265106202,
+   "lesion_dwi_vox_cache": 3453,
+   "lesion_adc_vox_cache": 2827,
+   "brain_vox_cache": 57453
+  },
+  {
+   "Paciente_id": "ACV-225",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.8279314093589782,
+   "lesion_dwi_vox_cache": 39,
+   "lesion_adc_vox_cache": 14,
+   "brain_vox_cache": 66016
+  },
+  {
+   "Paciente_id": "ACV-229",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 17.992983392715455,
+   "lesion_dwi_vox_cache": 714,
+   "lesion_adc_vox_cache": 668,
+   "brain_vox_cache": 70007
+  },
+  {
+   "Paciente_id": "ACV-230",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 3.2431687545776366,
+   "lesion_dwi_vox_cache": 133,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 69271
+  },
+  {
+   "Paciente_id": "ACV-239",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 32.32624202728272,
+   "lesion_dwi_vox_cache": 1342,
+   "lesion_adc_vox_cache": 1203,
+   "brain_vox_cache": 59563
+  },
+  {
+   "Paciente_id": "ACV-240",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 5.521296051979065,
+   "lesion_dwi_vox_cache": 223,
+   "lesion_adc_vox_cache": 236,
+   "brain_vox_cache": 56790
+  },
+  {
+   "Paciente_id": "ACV-241",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 2.0724614996910096,
+   "lesion_dwi_vox_cache": 89,
+   "lesion_adc_vox_cache": 58,
+   "brain_vox_cache": 49971
+  },
+  {
+   "Paciente_id": "ACV-242",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 3.164065647125244,
+   "lesion_dwi_vox_cache": 124,
+   "lesion_adc_vox_cache": 36,
+   "brain_vox_cache": 64453
+  },
+  {
+   "Paciente_id": "ACV-245",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 16.679900911331178,
+   "lesion_dwi_vox_cache": 692,
+   "lesion_adc_vox_cache": 417,
+   "brain_vox_cache": 55287
+  },
+  {
+   "Paciente_id": "ACV-247",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 7.119157361984253,
+   "lesion_dwi_vox_cache": 302,
+   "lesion_adc_vox_cache": 106,
+   "brain_vox_cache": 61392
+  },
+  {
+   "Paciente_id": "ACV-248",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 14.860575093269349,
+   "lesion_dwi_vox_cache": 624,
+   "lesion_adc_vox_cache": 241,
+   "brain_vox_cache": 62814
+  },
+  {
+   "Paciente_id": "ACV-252",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 47.350272379875186,
+   "lesion_dwi_vox_cache": 1964,
+   "lesion_adc_vox_cache": 1442,
+   "brain_vox_cache": 55224
+  },
+  {
+   "Paciente_id": "ACV-254",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.7876987071037294,
+   "lesion_dwi_vox_cache": 70,
+   "lesion_adc_vox_cache": 43,
+   "brain_vox_cache": 71835
+  },
+  {
+   "Paciente_id": "ACV-256",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 2.5945338306427,
+   "lesion_dwi_vox_cache": 109,
+   "lesion_adc_vox_cache": 101,
+   "brain_vox_cache": 57799
+  },
+  {
+   "Paciente_id": "ACV-262",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.444925663948059,
+   "lesion_dwi_vox_cache": 61,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 68366
+  },
+  {
+   "Paciente_id": "ACV-264",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 20.513673729896546,
+   "lesion_dwi_vox_cache": 848,
+   "lesion_adc_vox_cache": 830,
+   "brain_vox_cache": 59517
+  },
+  {
+   "Paciente_id": "ACV-267",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 26.968386198997496,
+   "lesion_dwi_vox_cache": 1126,
+   "lesion_adc_vox_cache": 1576,
+   "brain_vox_cache": 66486
+  },
+  {
+   "Paciente_id": "ACV-269",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 52.69756576824188,
+   "lesion_dwi_vox_cache": 2169,
+   "lesion_adc_vox_cache": 1212,
+   "brain_vox_cache": 62686
+  },
+  {
+   "Paciente_id": "ACV-270",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.0,
+   "lesion_dwi_vox_cache": 0,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 56621
+  },
+  {
+   "Paciente_id": "ACV-285",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 32.036170470714566,
+   "lesion_dwi_vox_cache": 1324,
+   "lesion_adc_vox_cache": 598,
+   "brain_vox_cache": 74238
+  },
+  {
+   "Paciente_id": "ACV-287",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 2.162113676071167,
+   "lesion_dwi_vox_cache": 88,
+   "lesion_adc_vox_cache": 54,
+   "brain_vox_cache": 60364
+  },
+  {
+   "Paciente_id": "ACV-288",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 112.40364555358887,
+   "lesion_dwi_vox_cache": 4649,
+   "lesion_adc_vox_cache": 4406,
+   "brain_vox_cache": 61134
+  },
+  {
+   "Paciente_id": "ACV-294",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.4712906589508057,
+   "lesion_dwi_vox_cache": 60,
+   "lesion_adc_vox_cache": 44,
+   "brain_vox_cache": 68032
+  },
+  {
+   "Paciente_id": "ACV-296",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.0,
+   "lesion_dwi_vox_cache": 0,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 61846
+  },
+  {
+   "Paciente_id": "ACV-308",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 15.10840663433075,
+   "lesion_dwi_vox_cache": 625,
+   "lesion_adc_vox_cache": 207,
+   "brain_vox_cache": 54136
+  },
+  {
+   "Paciente_id": "ACV-310",
+   "split": "train",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 3.744142994880676,
+   "lesion_dwi_vox_cache": 161,
+   "lesion_adc_vox_cache": 101,
+   "brain_vox_cache": 59070
+  },
+  {
+   "Paciente_id": "ACV-317",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 10.620727133750915,
+   "lesion_dwi_vox_cache": 426,
+   "lesion_adc_vox_cache": 392,
+   "brain_vox_cache": 68324
+  },
+  {
+   "Paciente_id": "ACV-323",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.7277350988388062,
+   "lesion_dwi_vox_cache": 29,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 67279
+  },
+  {
+   "Paciente_id": "ACV-324",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 27.87018522977829,
+   "lesion_dwi_vox_cache": 1139,
+   "lesion_adc_vox_cache": 1281,
+   "brain_vox_cache": 56077
+  },
+  {
+   "Paciente_id": "ACV-343",
+   "split": "train",
+   "orig_spacing": [
+    0.9769999980926514,
+    0.9769999980926514,
+    6.5
+   ],
+   "lesion_dwi_ml_orig": 1.3390615310668945,
+   "lesion_dwi_vox_cache": 78,
+   "lesion_adc_vox_cache": 51,
+   "brain_vox_cache": 69302
+  },
+  {
+   "Paciente_id": "ACV-344",
+   "split": "train",
+   "orig_spacing": [
+    0.8330000042915344,
+    0.8330000042915344,
+    7.199999809265137
+   ],
+   "lesion_dwi_ml_orig": 0.9249259877204895,
+   "lesion_dwi_vox_cache": 33,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 55501
+  },
+  {
+   "Paciente_id": "ACV-349",
+   "split": "train",
+   "orig_spacing": [
+    0.9769999980926514,
+    0.9769999980926514,
+    6.5
+   ],
+   "lesion_dwi_ml_orig": 0.4339555263519287,
+   "lesion_dwi_vox_cache": 17,
+   "lesion_adc_vox_cache": 12,
+   "brain_vox_cache": 56216
+  },
+  {
+   "Paciente_id": "ACV-362",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 8.221306160449982,
+   "lesion_dwi_vox_cache": 345,
+   "lesion_adc_vox_cache": 98,
+   "brain_vox_cache": 60147
+  },
+  {
+   "Paciente_id": "ACV-363",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 50.70415199518204,
+   "lesion_dwi_vox_cache": 2080,
+   "lesion_adc_vox_cache": 1790,
+   "brain_vox_cache": 55944
+  },
+  {
+   "Paciente_id": "ACV-369",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.86680025100708,
+   "lesion_dwi_vox_cache": 75,
+   "lesion_adc_vox_cache": 47,
+   "brain_vox_cache": 61233
+  },
+  {
+   "Paciente_id": "ACV-374",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.9544925327301026,
+   "lesion_dwi_vox_cache": 36,
+   "lesion_adc_vox_cache": 25,
+   "brain_vox_cache": 45398
+  },
+  {
+   "Paciente_id": "ACV-379",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.9492207241058349,
+   "lesion_dwi_vox_cache": 36,
+   "lesion_adc_vox_cache": 27,
+   "brain_vox_cache": 58558
+  },
+  {
+   "Paciente_id": "ACV-380",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 19.253325535297392,
+   "lesion_dwi_vox_cache": 786,
+   "lesion_adc_vox_cache": 700,
+   "brain_vox_cache": 57105
+  },
+  {
+   "Paciente_id": "ACV-384",
+   "split": "train",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.3289067306518554,
+   "lesion_dwi_vox_cache": 57,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 54871
+  },
+  {
+   "Paciente_id": "ACV-018",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 79.59204976272584,
+   "lesion_dwi_vox_cache": 3302,
+   "lesion_adc_vox_cache": 3213,
+   "brain_vox_cache": 58703
+  },
+  {
+   "Paciente_id": "ACV-021",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 43.25808213090897,
+   "lesion_dwi_vox_cache": 1792,
+   "lesion_adc_vox_cache": 2187,
+   "brain_vox_cache": 55537
+  },
+  {
+   "Paciente_id": "ACV-025",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 15.635767636299134,
+   "lesion_dwi_vox_cache": 641,
+   "lesion_adc_vox_cache": 740,
+   "brain_vox_cache": 54790
+  },
+  {
+   "Paciente_id": "ACV-026",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.8806643810272217,
+   "lesion_dwi_vox_cache": 40,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 61192
+  },
+  {
+   "Paciente_id": "ACV-041",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.25312520599365235,
+   "lesion_dwi_vox_cache": 6,
+   "lesion_adc_vox_cache": 12,
+   "brain_vox_cache": 56179
+  },
+  {
+   "Paciente_id": "ACV-046",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 23.994223070144653,
+   "lesion_dwi_vox_cache": 994,
+   "lesion_adc_vox_cache": 619,
+   "brain_vox_cache": 67877
+  },
+  {
+   "Paciente_id": "ACV-063",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 21.837346153736114,
+   "lesion_dwi_vox_cache": 900,
+   "lesion_adc_vox_cache": 766,
+   "brain_vox_cache": 59414
+  },
+  {
+   "Paciente_id": "ACV-132",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.3289069709777832,
+   "lesion_dwi_vox_cache": 54,
+   "lesion_adc_vox_cache": 55,
+   "brain_vox_cache": 61339
+  },
+  {
+   "Paciente_id": "ACV-149",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.0,
+   "lesion_dwi_vox_cache": 0,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 62279
+  },
+  {
+   "Paciente_id": "ACV-173",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.328907932281494,
+   "lesion_dwi_vox_cache": 46,
+   "lesion_adc_vox_cache": 40,
+   "brain_vox_cache": 71026
+  },
+  {
+   "Paciente_id": "ACV-180",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.8035185604095458,
+   "lesion_dwi_vox_cache": 74,
+   "lesion_adc_vox_cache": 8,
+   "brain_vox_cache": 68813
+  },
+  {
+   "Paciente_id": "ACV-192",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 16.23693902158737,
+   "lesion_dwi_vox_cache": 677,
+   "lesion_adc_vox_cache": 300,
+   "brain_vox_cache": 60299
+  },
+  {
+   "Paciente_id": "ACV-214",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 41.93451908874512,
+   "lesion_dwi_vox_cache": 1710,
+   "lesion_adc_vox_cache": 1623,
+   "brain_vox_cache": 68777
+  },
+  {
+   "Paciente_id": "ACV-231",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 3.20097945690155,
+   "lesion_dwi_vox_cache": 139,
+   "lesion_adc_vox_cache": 75,
+   "brain_vox_cache": 58354
+  },
+  {
+   "Paciente_id": "ACV-249",
+   "split": "val",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 4.619532085418701,
+   "lesion_dwi_vox_cache": 192,
+   "lesion_adc_vox_cache": 54,
+   "brain_vox_cache": 65093
+  },
+  {
+   "Paciente_id": "ACV-251",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 10.061732397079467,
+   "lesion_dwi_vox_cache": 415,
+   "lesion_adc_vox_cache": 185,
+   "brain_vox_cache": 65728
+  },
+  {
+   "Paciente_id": "ACV-253",
+   "split": "val",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.8246120147705078,
+   "lesion_dwi_vox_cache": 80,
+   "lesion_adc_vox_cache": 46,
+   "brain_vox_cache": 68952
+  },
+  {
+   "Paciente_id": "ACV-259",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 6.338679326057434,
+   "lesion_dwi_vox_cache": 268,
+   "lesion_adc_vox_cache": 68,
+   "brain_vox_cache": 64998
+  },
+  {
+   "Paciente_id": "ACV-260",
+   "split": "val",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 54.20048374271393,
+   "lesion_dwi_vox_cache": 2229,
+   "lesion_adc_vox_cache": 2289,
+   "brain_vox_cache": 58699
+  },
+  {
+   "Paciente_id": "ACV-289",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 28.835164072036743,
+   "lesion_dwi_vox_cache": 1183,
+   "lesion_adc_vox_cache": 830,
+   "brain_vox_cache": 65498
+  },
+  {
+   "Paciente_id": "ACV-351",
+   "split": "val",
+   "orig_spacing": [
+    0.8330000042915344,
+    0.8330000042915344,
+    7.199999809265137
+   ],
+   "lesion_dwi_ml_orig": 3.7897000026702883,
+   "lesion_dwi_vox_cache": 133,
+   "lesion_adc_vox_cache": 59,
+   "brain_vox_cache": 65183
+  },
+  {
+   "Paciente_id": "ACV-361",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.5082048978805542,
+   "lesion_dwi_vox_cache": 65,
+   "lesion_adc_vox_cache": 19,
+   "brain_vox_cache": 60352
+  },
+  {
+   "Paciente_id": "ACV-364",
+   "split": "val",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 31.566779748916627,
+   "lesion_dwi_vox_cache": 1313,
+   "lesion_adc_vox_cache": 1214,
+   "brain_vox_cache": 53915
+  },
+  {
+   "Paciente_id": "ACV-382",
+   "split": "val",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.5503910455703735,
+   "lesion_dwi_vox_cache": 66,
+   "lesion_adc_vox_cache": 13,
+   "brain_vox_cache": 62433
+  },
+  {
+   "Paciente_id": "ACV-006",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 3.8601552028656005,
+   "lesion_dwi_vox_cache": 161,
+   "lesion_adc_vox_cache": 78,
+   "brain_vox_cache": 64477
+  },
+  {
+   "Paciente_id": "ACV-020",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.3658216710090638,
+   "lesion_dwi_vox_cache": 55,
+   "lesion_adc_vox_cache": 0,
+   "brain_vox_cache": 59199
+  },
+  {
+   "Paciente_id": "ACV-036",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 11.511942167758942,
+   "lesion_dwi_vox_cache": 470,
+   "lesion_adc_vox_cache": 391,
+   "brain_vox_cache": 68092
+  },
+  {
+   "Paciente_id": "ACV-056",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 20.439888107299804,
+   "lesion_dwi_vox_cache": 843,
+   "lesion_adc_vox_cache": 844,
+   "brain_vox_cache": 61099
+  },
+  {
+   "Paciente_id": "ACV-087",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 2.7843800354003907,
+   "lesion_dwi_vox_cache": 119,
+   "lesion_adc_vox_cache": 103,
+   "brain_vox_cache": 69353
+  },
+  {
+   "Paciente_id": "ACV-108",
+   "split": "test",
+   "orig_spacing": [
+    0.8679999709129333,
+    0.8679999709129333,
+    6.5
+   ],
+   "lesion_dwi_ml_orig": 5.349039596557617,
+   "lesion_dwi_vox_cache": 217,
+   "lesion_adc_vox_cache": 37,
+   "brain_vox_cache": 58321
+  },
+  {
+   "Paciente_id": "ACV-123",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.6294939556121826,
+   "lesion_dwi_vox_cache": 69,
+   "lesion_adc_vox_cache": 55,
+   "brain_vox_cache": 63149
+  },
+  {
+   "Paciente_id": "ACV-210",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 73.73324979496002,
+   "lesion_dwi_vox_cache": 3041,
+   "lesion_adc_vox_cache": 2472,
+   "brain_vox_cache": 76579
+  },
+  {
+   "Paciente_id": "ACV-212",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 9.286526796340942,
+   "lesion_dwi_vox_cache": 377,
+   "lesion_adc_vox_cache": 294,
+   "brain_vox_cache": 59408
+  },
+  {
+   "Paciente_id": "ACV-226",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 33.89768690109253,
+   "lesion_dwi_vox_cache": 1411,
+   "lesion_adc_vox_cache": 1345,
+   "brain_vox_cache": 74128
+  },
+  {
+   "Paciente_id": "ACV-232",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.61367537689209,
+   "lesion_dwi_vox_cache": 67,
+   "lesion_adc_vox_cache": 38,
+   "brain_vox_cache": 60739
+  },
+  {
+   "Paciente_id": "ACV-233",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.112697425365448,
+   "lesion_dwi_vox_cache": 51,
+   "lesion_adc_vox_cache": 32,
+   "brain_vox_cache": 60867
+  },
+  {
+   "Paciente_id": "ACV-237",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 29.95318187713623,
+   "lesion_dwi_vox_cache": 1232,
+   "lesion_adc_vox_cache": 1080,
+   "brain_vox_cache": 56797
+  },
+  {
+   "Paciente_id": "ACV-238",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.0283201265335082,
+   "lesion_dwi_vox_cache": 46,
+   "lesion_adc_vox_cache": 45,
+   "brain_vox_cache": 60003
+  },
+  {
+   "Paciente_id": "ACV-244",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 15.002925617694855,
+   "lesion_dwi_vox_cache": 627,
+   "lesion_adc_vox_cache": 188,
+   "brain_vox_cache": 56365
+  },
+  {
+   "Paciente_id": "ACV-281",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 106.03318039226532,
+   "lesion_dwi_vox_cache": 4383,
+   "lesion_adc_vox_cache": 4700,
+   "brain_vox_cache": 75361
+  },
+  {
+   "Paciente_id": "ACV-291",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 12.703727019309998,
+   "lesion_dwi_vox_cache": 520,
+   "lesion_adc_vox_cache": 329,
+   "brain_vox_cache": 62882
+  },
+  {
+   "Paciente_id": "ACV-297",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 12.00236545562744,
+   "lesion_dwi_vox_cache": 500,
+   "lesion_adc_vox_cache": 93,
+   "brain_vox_cache": 56153
+  },
+  {
+   "Paciente_id": "ACV-302",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 0.558985032081604,
+   "lesion_dwi_vox_cache": 26,
+   "lesion_adc_vox_cache": 19,
+   "brain_vox_cache": 66035
+  },
+  {
+   "Paciente_id": "ACV-328",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 3.622857786655426,
+   "lesion_dwi_vox_cache": 145,
+   "lesion_adc_vox_cache": 166,
+   "brain_vox_cache": 59130
+  },
+  {
+   "Paciente_id": "ACV-368",
+   "split": "test",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 1.0705083932876587,
+   "lesion_dwi_vox_cache": 44,
+   "lesion_adc_vox_cache": 63,
+   "brain_vox_cache": 51520
+  },
+  {
+   "Paciente_id": "ACV-370",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 54.02112794303894,
+   "lesion_dwi_vox_cache": 2230,
+   "lesion_adc_vox_cache": 1871,
+   "brain_vox_cache": 56478
+  },
+  {
+   "Paciente_id": "ACV-372",
+   "split": "test",
+   "orig_spacing": [
+    0.9369999766349792,
+    0.9380000233650208,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 2.014453853607178,
+   "lesion_dwi_vox_cache": 84,
+   "lesion_adc_vox_cache": 43,
+   "brain_vox_cache": 69411
+  },
+  {
+   "Paciente_id": "ACV-378",
+   "split": "test",
+   "orig_spacing": [
+    0.9380000233650208,
+    0.9369999766349792,
+    6.0
+   ],
+   "lesion_dwi_ml_orig": 33.34927906036377,
+   "lesion_dwi_vox_cache": 1383,
+   "lesion_adc_vox_cache": 1161,
+   "brain_vox_cache": 66936
+  }
+ ]
+}

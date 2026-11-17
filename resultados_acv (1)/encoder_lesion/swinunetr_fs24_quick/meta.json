@@ -1,0 +1,33 @@
+{
+ "joint_inputs": true,
+ "feat_dim": 289,
+ "grid_dhw": [
+  4,
+  8,
+  8
+ ],
+ "conditions": [
+  "adc",
+  "dwi",
+  "adc+dwi"
+ ],
+ "features": "swin 1/16 + swin 1/8 (promediado) + prob. de lesi\u00f3n predicha",
+ "spacing_xyz_mm": [
+  1.75,
+  1.75,
+  3.0
+ ],
+ "shape_xyz": [
+  128,
+  128,
+  64
+ ],
+ "checkpoint_dice_val": {
+  "epoch": 2,
+  "loss": 1.5185997247695924,
+  "sec": 4.034456014633179,
+  "dice_adc": 0.00528848561225459,
+  "dice_dwi": 0.0013394993729889393,
+  "dice_adc+dwi": 0.0034103933430742472
+ }
+}

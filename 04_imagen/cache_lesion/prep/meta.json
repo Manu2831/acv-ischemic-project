@@ -1,0 +1,1 @@
+{"spacing_xyz_mm": [1.75, 1.75, 3.0], "shape_xyz": [128, 128, 64], "channels": ["adc", "dwi"], "n_isles": 250}

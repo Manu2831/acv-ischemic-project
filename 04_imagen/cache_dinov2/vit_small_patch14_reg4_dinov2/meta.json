@@ -1,0 +1,20 @@
+{
+ "backbone": "vit_small_patch14_reg4_dinov2.lvd142m",
+ "grid_dhw": [
+  28,
+  8,
+  8
+ ],
+ "feat_dim": 384,
+ "spacing_xyz_mm": [
+  1.0,
+  1.0,
+  6.0
+ ],
+ "shape_xyz": [
+  224,
+  224,
+  28
+ ],
+ "pool": 2
+}

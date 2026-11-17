@@ -1,0 +1,66 @@
+﻿id,split,variable,valor_csv,valor_nota,usado,estado,evidencia
+ACV-040,train,nihss,120.0,10,10,corregido,"NIHHS de ingreso 10 puntos (CSV: 120, valor imposible)"
+ACV-014,train,nihss,2.0,17,17,"corregido, confirmar",disártrico y afásico con nihss de 17 puntos (la fila del CSV parece copiada de ACV-031)
+ACV-028,train,nihss,17.0,7,7,corregido,NIHS SCORE 7 ... IDX ACV isquémico talámico - NIHS 7
+ACV-069,train,nihss,11.0,15,15,corregido,con NIHSS 15 puntos se activa código stroke
+ACV-081,train,nihss,8.0,19,19,corregido,presenta NIHSS de 19 ... NIHSS 19 puntos al ingreso
+ACV-094,train,nihss,22.0,28,28,corregido,hemiparesia derecha 1.2. NIHSS: 28
+ACV-122,train,nihss,10.0,5,5,"corregido, confirmar","NIHSS de 5 puntos, se activa código ACV"
+ACV-162,train,nihss,3.0,6,6,corregido,déficit neurológico NIHSS 6 puntos ... -- NIHSS 6 puntos
+ACV-182,train,nihss,9.0,5,5,"corregido, confirmar",NIHSS actual: 5 puntos (remisión sin NIHSS especificado)
+ACV-208,train,nihss,12.0,3,3,"corregido, confirmar","con resolución de los síntomas, NIHSS 3 (CSV: 12, ¿NIHSS antes de la resolución?)"
+ACV-247,train,nihss,10.0,3,3,corregido,"(NIHSS3) ... ACV isquémico de ACM derecha, NIHSS de 3"
+ACV-296,train,nihss,9.0,2,2,"corregido, confirmar",paciente con nihss 2 ptos
+ACV-317,train,nihss,10.0,5,5,"corregido, confirmar","NIHSS 16 en el sitio de remisión antes de trombólisis; al llegar NIHSS de 5 puntos (CSV: 10, no coincide con ninguno)"
+ACV-344,train,nihss,4.0,12,12,corregido,Nihss de 12 puntos ... Nihss de ingreso de: 12 puntos
+ACV-041,val,nihss,4.0,7,7,corregido,se activa código. NIHSS: 7 puntos
+ACV-192,val,nihss,3.0,9,9,corregido,con NIHSS 9 pts y glucometría de 120 mg/dl al ingreso
+ACV-364,val,nihss,10.0,6,6,corregido,ECV del despertar con nihss 6 ptos
+ACV-087,test,nihss,18.0,3,3,corregido,"no asimetría facial, no disartria: NIHSS 3 (CSV: 18)"
+ACV-055,train,nihss,4.0,6,6,corregido,"glasgow 15/15, NIHSS de 6"
+ACV-062,train,nihss,1.0,2,2,corregido,"no disartria o afasia, NIHSS 2 puntos"
+ACV-064,train,nihss,10.0,9,9,corregido,"desviación de comisura labial, NIHSS 9"
+ACV-089,train,nihss,3.0,2,2,corregido,disartria y desviación de comisura labial (nihss 2)
+ACV-090,train,nihss,12.0,11,11,corregido,hemiparesia faciobraquiocrural derecha NIHSS 11
+ACV-151,train,nihss,4.0,5,5,corregido,Síndrome neurovascular agudo -- NIHSS 5 puntos
+ACV-163,train,nihss,4.0,6,6,corregido,NIHSS 6 de ingreso ... -- NIHSS ingreso 6
+ACV-181,train,nihss,4.0,3,3,corregido,ECV isquémico? NIHSS: 3
+ACV-200,train,nihss,6.0,4,4,corregido,ACV fuera de ventana en estudio - NIHSS: 4 puntos
+ACV-201,train,nihss,12.0,13,13,corregido,escala de NIHSS 13 puntos
+ACV-254,train,nihss,2.0,3,3,corregido,NIHSS 3 puntos (dos veces)
+ACV-270,train,nihss,5.0,4,4,corregido,Nihss Score 4 puntos (la fila del CSV es idéntica a la de ACV-132)
+ACV-369,train,nihss,2.0,3,3,corregido,nihhs de ingreso 3 puntos
+ACV-379,train,nihss,24.0,25,25,corregido,NIHSS de ingreso de 25
+ACV-046,val,nihss,2.0,3,3,corregido,Al examen físico: NIHSS 3 puntos
+ACV-036,test,nihss,1.0,3,3,"corregido, confirmar",vence gravedad pero no mantiene ... NIHSS 3
+ACV-123,test,nihss,15.0,17,17,corregido,resultado de NIHSS de 17 puntos
+ACV-244,test,nihss,8.0,6,6,corregido,NIHHS de 6 puntos (tres veces)
+ACV-291,test,nihss,4.0,2,2,corregido,NIHSS de ingreso 2 puntos
+ACV-014,train,edad,77.0,67,67,"corregido, confirmar","paciente masculino de 67 años (CSV: 77, igual que ACV-031)"
+ACV-019,train,edad,53.0,64,64,corregido,Paciente femenina de 64 años (CSV: 53)
+ACV-194,train,edad,85.0,66,66,corregido,Paciente de 66 años de edad (CSV: 85)
+ACV-267,train,edad,52.0,55,55,corregido,femenina adulta media de 55 años (la fila del CSV es idéntica a la de ACV-254)
+ACV-149,val,edad,72.0,74,74,corregido,paciente femenina de 74 años (CSV: 72)
+ACV-180,val,edad,22.0,20,20,corregido,Paciente de 20 años (CSV: 22)
+ACV-212,test,edad,63.0,58,58,corregido,Paciente masculino de 58 años (CSV: 63)
+ACV-281,test,edad,68.0,63,63,corregido,Paciente masculino de 63 años (CSV: 68)
+ACV-162,train,fa,0.0,1,1,corregido,fibrilación auricular de novo con respuesta ventricular conservada
+ACV-182,train,fa,0.0,1,1,corregido,FA paroxística causante de embolismo cerebral
+ACV-224,train,fa,0.0,1,1,corregido,ACV isquémico cardioembólico por FA ... anticoagulación rivaroxabán
+ACV-028,train,dm,0.0,1,1,corregido,antecedentes de HTA - DM tipo 2
+ACV-281,test,dm,0.0,1,1,corregido,antecedente de HTA y DM2 de novo
+ACV-145,train,hta,0.0,1,1,corregido,Hombre de 54 años con antecedente de HTA
+ACV-247,train,hta,0.0,1,1,corregido,antecedentes de HTA
+ACV-267,train,hta,0.0,1,1,corregido,"antecedentes de obesidad, HTA, t. ansiedad"
+ACV-267,train,sexo,M,F,F,corregido,"FEMENINA adulta media (CSV: masculino, copiado de ACV-254)"
+ACV-011,train,mrs_egreso,2.0,,excluido,duda sin resolver,"Misma RM y misma nota que ACV-030, pero mRS 2 vs 5. Se excluyen los dos hasta saber cuál es el correcto."
+ACV-030,train,mrs_egreso,5.0,,excluido,duda sin resolver,Duplicado de ACV-011 con mRS distinto (5 vs 2). Excluido.
+ACV-269,train,fila,,,excluido,duda sin resolver,"Fila del CSV idéntica a ACV-256 (26 años, hombre, NIHSS 6); la nota no trae edad ni NIHSS y describe un AIT leve. Excluido por no verificable."
+ACV-031,train,imagen,,,valor del CSV,duda sin resolver,"Misma RM que ACV-014, pero las notas son de pacientes distintos (77 años NIHSS 2 vs 67 años NIHSS 17). ¿De quién es la RM?"
+ACV-270,train,edad,76.0,,valor del CSV,duda sin resolver,Fila idéntica a ACV-132 (76 años); la nota dice 'adulta mayor' sin edad. Además la nota refiere ACV previo a los 32 años (CSV: no).
+ACV-020,test,nihss,4.0,,valor del CSV,duda sin resolver,La nota dice 'NIHSS de 41' en un AIT; el CSV dice 4. Probable error de tipeo en la nota. Queda 4.
+ACV-150,train,nihss,17.0,,valor del CSV,duda sin resolver,Nota: 17 puntos al inicio y luego 15. CSV: 17. Queda 17.
+ACV-149,val,nihss,10.0,,valor del CSV,duda sin resolver,Nota: NIHSS inicial 10 (sitio de remisión) y 14 al llegar. CSV: 10. Queda 10; definir cuál se usa.
+ACV-372,test,nihss,8.0,,valor del CSV,duda sin resolver,Nota: 8 en el sitio de remisión y 3 al llegar. CSV: 8. Queda 8; definir cuál se usa.
+ACV-174,train,dm,0.0,,valor del CSV,duda sin resolver,"Nota: 'Diabetes Mellitus tipo II ?' con HbA1c 6,6 %. CSV: no."
+ACV-170,train,hta,0.0,,valor del CSV,duda sin resolver,Nota: hipertensa al ingreso y se indica losartán; sin antecedente explícito. CSV: no.
