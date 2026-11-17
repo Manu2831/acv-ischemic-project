@@ -29,6 +29,7 @@ Tambi?n puedes usar **Code > Download ZIP** en GitHub despu?s de iniciar sesi?n.
 - `05_kaggle/`: generaci?n del paquete para Kaggle.
 - `06_mapa_lesiones/`: mapas y descriptores de lesiones.
 - `07_tabla_limpia/`: construcci?n y evaluaci?n de la tabla corregida.
+- `08_desconexion/`: c?digo adicional de desconexi?n.
 - `datos/` y carpetas de resultados: datos y artefactos existentes.
 
 ## Configuraci?n de rutas y Python
