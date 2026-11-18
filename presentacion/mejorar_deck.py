@@ -7,7 +7,7 @@ explicado), resultados (resumen de la Entrega 2 y luego lo nuevo), análisis y c
 - Corrige números de la tabla de fusiones y de la matriz de confusión contra resultados_acv_p/resumen.csv
 - Agrega: dataset, mejor modelo, resumen de la Entrega 2, cambios de la Entrega 3, controles, auditoría de datos,
   ubicación, desconexión, síntesis y notebook de la Entrega 3
-- Deja recuadros punteados donde van las imágenes de pipeline y la captura del notebook (se pegan a mano)
+- Imágenes: pipeline del mejor modelo (de la diap. 4), diagrama nativo de la Entrega 3 y captura del notebook
 - Los resultados detallados de la Entrega 2 pasan a un anexo al final
 
 Uso: python mejorar_deck.py [entrada.pptx] [salida.pptx]
@@ -523,6 +523,70 @@ def hueco(sl, x, y, w, h, que, detalle=""):
          anchor=MSO_ANCHOR.MIDDLE, nombre="Texto guía (borrar al pegar la imagen)")
 
 
+def imagen_en_caja(sl, x, y, w, h, fuente, nombre):
+    """Inserta una imagen (ruta o bytes) ajustada y centrada dentro de la caja x, y, w, h (en puntos)."""
+    import io
+    datos = io.BytesIO(fuente) if isinstance(fuente, bytes) else open(fuente, "rb")
+    ancho, alto = Image.open(datos).size
+    datos.seek(0)
+    k = min(w / ancho, h / alto)
+    pw, ph = ancho * k, alto * k
+    pic = sl.shapes.add_picture(datos, Pt(x + (w - pw) / 2), Pt(y + (h - ph) / 2), Pt(pw), Pt(ph))
+    pic.name = nombre
+    pic.line.color.rgb = rgb("E4DEF2")
+    pic.line.width = Pt(0.75)
+    return pic
+
+
+def flecha(sl, x1, y1, x2, y2, col=GRIS):
+    from pptx.enum.shapes import MSO_CONNECTOR
+    c = sl.shapes.add_connector(MSO_CONNECTOR.STRAIGHT, Pt(x1), Pt(y1), Pt(x2), Pt(y2))
+    c.line.color.rgb = rgb(col)
+    c.line.width = Pt(1.25)
+    ln = c.line._get_or_add_ln()
+    punta = ln.makeelement("{http://schemas.openxmlformats.org/drawingml/2006/main}tailEnd", {"type": "triangle"})
+    ln.append(punta)
+    return c
+
+
+def nodo(sl, x, y, w, h, texto, fondo=TARJ, color_texto=TEXTO, negrita=False):
+    r = rect(sl, x, y, w, h, fondo, MSO_SHAPE.ROUNDED_RECTANGLE)
+    r.adjustments[0] = 0.15
+    if fondo == TARJ:
+        r.line.fill.solid()
+        r.line.fill.fore_color.rgb = rgb(LILA)
+        r.line.width = Pt(1)
+    caja(sl, x + 6, y, w - 12, h, [P(texto, 11, negrita, color_texto, CUERPO, PP_ALIGN.CENTER)], anchor=MSO_ANCHOR.MIDDLE)
+    return r
+
+
+def diagrama_e3(sl, x, y, w, h):
+    """Pipeline de análisis de la Entrega 3, con formas nativas (editable en PowerPoint)."""
+    cw, gap, bh = (w - 30) / 2, 30, 34
+    xa, xb = x, x + cw + gap
+    caja(sl, xa, y, cw, 16, [P("Datos clínicos", 11, True, MORADO, TIT, PP_ALIGN.CENTER)])
+    caja(sl, xb, y, cw, 16, [P("Imagen", 11, True, MORADO, TIT, PP_ALIGN.CENTER)])
+    filas = [("Notas de ingreso (160)", "RM DWI + máscara de lesión"),
+             ("Auditoría contra el CSV", "Registro afín a MNI152"),
+             ("Tabla limpia · 155 pacientes", "Atlas: mapa · JHU · BCB (68)")]
+    for k, (ta, tb_) in enumerate(filas):
+        yy = y + 24 + k * 58
+        nodo(sl, xa, yy, cw, bh, ta, NAVY if k == 2 else TARJ, "FFFFFF" if k == 2 else TEXTO, k == 2)
+        nodo(sl, xb, yy, cw, bh, tb_, NAVY if k == 2 else TARJ, "FFFFFF" if k == 2 else TEXTO, k == 2)
+        if k:
+            flecha(sl, xa + cw / 2, yy - 24, xa + cw / 2, yy)
+            flecha(sl, xb + cw / 2, yy - 24, xb + cw / 2, yy)
+    ym = y + 24 + 3 * 58 + 10
+    xm, wm = x + 50, w - 100
+    flecha(sl, xa + cw / 2, ym - 34, xm + wm * 0.3, ym)
+    flecha(sl, xb + cw / 2, ym - 34, xm + wm * 0.7, ym)
+    nodo(sl, xm, ym, wm, bh, "Edad + NIHSS + 1 variable de la lesión")
+    flecha(sl, x + w / 2, ym + bh, x + w / 2, ym + bh + 20)
+    nodo(sl, xm, ym + bh + 20, wm, bh, "CV repetida 5×50 → ΔAUC frente a edad + NIHSS", MAGENTA, "FFFFFF", True)
+    caja(sl, x, ym + 2 * bh + 30, w, 20, [P("Aparte: controles de la fusión en Kaggle (imagen barajada, peso de la compuerta)",
+                                           10, False, GRIS, CUERPO, PP_ALIGN.CENTER)])
+
+
 # Dataset
 sl = N["dataset"]
 encabezado(sl, "3 · DATASET", "Dataset: descripción y descarga")
@@ -558,8 +622,8 @@ notas(sl, "[40 s] Usamos tres fuentes. La principal es la cohorte de FOSCAL: 160
 # Mejor modelo
 sl = N["mejor"]
 encabezado(sl, "4 · MEJOR MODELO", "Mejor modelo: fusión con compuerta (Gated)")
-hueco(sl, 64, 146, 470, 320, "imagen del pipeline del mejor modelo",
-      "SwinUNETR congelado + encoder tabular + compuerta (Gated)")
+pipeline = next(sh for sh in orig[3].shapes if sh.shape_type == 13 and sh.width > Pt(300))  # diagrama de la diap. 4
+imagen_en_caja(sl, 64, 146, 470, 320, pipeline.image.blob, "Pipeline del mejor modelo")
 pasos_m = [
     ("Imagen: ", "SwinUNETR congelado (Etapa A) → 256 tokens + máscara → encoder de imagen → un vector"),
     ("Clínica: ", "5 variables, un token cada una → encoder tabular → un vector"),
@@ -608,7 +672,7 @@ cambios = [
 for k, (b, r) in enumerate(cambios):
     vineta(sl, 66, 150 + k * 56, 390, 48, b, r, MAGENTA if k == 0 else INDIGO)
 caja(sl, 64, 434, 400, 40, [P("Todo contra la misma referencia: edad + NIHSS, validación cruzada repetida 5×50.", 12, True, TEXTO)])
-hueco(sl, 486, 146, 410, 320, "imagen del pipeline de la Entrega 3", "auditoría → registro a MNI → atlas → tractos → modelo")
+diagrama_e3(sl, 486, 146, 410, 320)
 notas(sl, "[45 s] Para responder esa pregunta cambiamos el enfoque: en vez de una red más grande, controles y medidas "
       "interpretables. Uno, auditamos la tabla clínica contra las notas de ingreso. Dos, corrimos controles sobre la fusión. "
       "Tres, medimos dónde está la lesión. Cuatro, registramos las lesiones al espacio MNI y medimos cuánto tocan el tracto "
@@ -629,7 +693,12 @@ for k, (n, t) in enumerate(celdas):
     caja(sl, 78, y + 2, 40, 22, [P(n, 12, False, GRIS, "Courier New")])
     caja(sl, 122, y + 2, 270, 22, [P(t, 13, k in (2, 6), TEXTO)])
 caja(sl, 64, 440, 330, 30, [P("Corre de arriba abajo; las salidas solo muestran resultados agregados, nunca IDs.", 11, False, GRIS)])
-hueco(sl, 420, 146, 476, 324, "captura del notebook", "por ejemplo la celda [7]: tabla y gráfico de la síntesis")
+captura = AQUI / "figuras" / "notebook_celda7.png"  # se genera con captura_notebook.py
+if captura.exists():
+    imagen_en_caja(sl, 420, 146, 476, 324, str(captura), "Captura del notebook: celda [7]")
+    caja(sl, 420, 474, 476, 14, [P("Salida de la celda [7] de entrega3_resultados.ipynb", 10, False, GRIS, CUERPO, PP_ALIGN.CENTER)])
+else:
+    hueco(sl, 420, 146, 476, 324, "captura del notebook", "corre captura_notebook.py para generarla")
 notas(sl, "[1 min] Este es el notebook de la Entrega 3. Corre de arriba abajo y reproduce todo lo que mostramos: la "
       "comparación de la tabla original contra la tabla limpia, los controles de la fusión a partir del resumen de Kaggle, "
       "la ubicación, la desconexión con JHU y con Tractotron, y al final la síntesis con el cambio de AUC de cada variable. "
