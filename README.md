@@ -1,6 +1,4 @@
-
 # ACV isquémico: predicción del mRS al egreso con imagen y datos clínicos
-
 
 **Objetivo:** predecir el mal desenlace al egreso (mRS > 2) en ACV isquémico combinando RM DWI/ADC con variables clínicas, y saber si la imagen aporta más allá de la clínica.
 
@@ -37,9 +35,7 @@ git clone https://github.com/Manu2831/acv-ischemic-project.git
 cd acv-ischemic-project
 ```
 
-
 También puedes usar **Code > Download ZIP** en GitHub después de iniciar sesión.
-
 
 ## Archivos que debes transferir aparte
 
@@ -62,6 +58,7 @@ También puedes usar **Code > Download ZIP** en GitHub después de iniciar sesi�
 - `presentacion/`: script que arma el deck de la Entrega 3.
 - `datos/` y carpetas de resultados: datos y artefactos existentes.
 
+## Configuración de rutas y Python
 
 Instala las dependencias que requiera el experimento que vayas a ejecutar. Los scripts usan, entre otras, PyTorch, NumPy, pandas, scikit-learn, Transformers, TabPFN, matplotlib, seaborn, SciPy, nibabel, SimpleITK, timm, python-pptx y python-dotenv; algunos flujos también usan MONAI o Weights & Biases. Esta copia no fija versiones ni garantiza reproducibilidad del entorno original.
 
